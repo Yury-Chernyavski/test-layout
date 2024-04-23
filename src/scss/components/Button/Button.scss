@@ -1,0 +1,29 @@
+.button {
+	@include text-size(2.2em);
+	@extend .hover-animation;
+	width: 191px;
+	height: 54px;
+	border-radius: 50px;
+	font-weight: 700;
+
+}
+
+.primal {
+	background-color: $yellow;
+	border: none;
+
+	&:hover {
+		background-color: $dark-yellow;
+	}
+}
+
+.secondary {
+	color: $yellow;
+	background: none;
+	border: 2px solid $yellow;
+
+	&:hover {
+		color: $dark-yellow;
+		border-color: $dark-yellow;
+	}
+}
