@@ -4,3 +4,4 @@ export { Button } from "./common/Button/Button";
 export { Card } from "./common/Card/Card";
 export { Offers } from "./Offers/Offers";
 export { Banner } from "./Banner/Banner";
+export { Info } from "./Info/Info";

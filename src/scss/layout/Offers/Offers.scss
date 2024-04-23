@@ -1,6 +1,5 @@
 .offers {
 	width: 100%;
-	// background-color: $dark-blue;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -18,7 +17,7 @@
 
 
 	&__title {
-		@include text-size(3.2em, 40px);
+		@include text-size(3.2em);
 		margin-bottom: 40px;
 	}
 }

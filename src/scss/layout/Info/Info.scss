@@ -1,0 +1,25 @@
+.info {
+	@extend .section-size;
+	@include text-size(2em);
+	margin-bottom: 60px;
+
+	&__title {
+		@include text-size(3.2rem);
+		font-weight: 800;
+	}
+
+	&__text {
+		opacity: 60%;
+		margin: 17px 0;
+	}
+
+	&__link {
+		color: $yellow;
+		text-decoration: none;
+		@extend .hover-animation;
+
+		&:hover {
+			color: $dark-yellow;
+		}
+	}
+}

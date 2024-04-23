@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "../../scss/index.scss";
-import { Banner, Header, Offers } from "../index";
+import { Banner, Header, Info, Offers } from "../index";
 
 const App: FC = (): JSX.Element => {
 	return (
@@ -9,6 +9,7 @@ const App: FC = (): JSX.Element => {
 			<Banner />
 			<main>
 				<Offers />
+				<Info />
 			</main>
 		</div>
 	);
