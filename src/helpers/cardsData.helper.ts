@@ -1,8 +1,8 @@
 import { ICardData } from "../models";
-import space1 from "./assets/space2.jpg";
-import space2 from "./assets/space4.jpg";
-import space3 from "./assets/space1.jpg";
-import space4 from "./assets/space3.jpg";
+import space1 from "./assets/space1.jpg";
+import space2 from "./assets/space2.jpg";
+import space3 from "./assets/space3.jpg";
+import space4 from "./assets/space4.jpg";
 
 export const cardsData: ICardData[] = [
 	{
