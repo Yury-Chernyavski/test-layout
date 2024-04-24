@@ -8,7 +8,7 @@ export const Header: FC = () => {
 		<header className="header">
 			<div className="header__wrapper">
 				<a href="#">
-					<Logo />
+					<Logo className="logo" />
 				</a>
 				<Navbar />
 			</div>

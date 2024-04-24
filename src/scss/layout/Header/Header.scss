@@ -3,7 +3,7 @@
 	display: flex;
 	align-items: center;
 	background-color: black;
-	position: sticky;
+	position: relative;
 
 	&__wrapper {
 		@extend .section-size;
@@ -11,4 +11,17 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		width: 71px;
+		height: 24px;
+	}
+}
+
+@media (max-width: 640px) {
+	.header {
+		height: 48px;
+	};
 }

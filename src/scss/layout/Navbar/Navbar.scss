@@ -8,7 +8,6 @@
 		color: white;
 		text-decoration: none;
 		margin: 30px;
-		// transition: all 0.2s;
 	}
 
 	&__link:hover {
@@ -17,13 +16,52 @@
 		-webkit-text-fill-color: transparent;
 	}
 
-	&__cart {
-		fill: white;
-		
-		transition: all 1s ease;
-	}
-
 	&__cart:hover {
 		fill: url(#cartGradient);
+	}
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.menu-toggle {
+	cursor: pointer;
+}
+
+.close-icon,
+.burger-icon {
+	display: none;
+}
+
+@media (max-width: 640px) {
+	.menu {
+		display: flex;
+		place-items: center;
+		flex-direction: column;
+		height: 0;
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 48px;
+		background-color: black;
+		transition: height .5s;
+	}
+
+	.burger-icon {
+		display: block;
+	}
+
+	#menu-toggle:checked ~ .menu {
+		height: 260px;
+	}
+
+	#menu-toggle:checked ~ .burger .burger-icon {
+		display: none;
+	}
+
+	#menu-toggle:checked ~ .burger .close-icon {
+		display: block;
 	}
 }
