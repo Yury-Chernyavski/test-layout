@@ -1,12 +1,13 @@
 import { FC } from "react";
 import { cardsData } from "../../helpers/cardsData.helper";
-import { Card } from "../";
+import { Card, H2 } from "../";
 
 export const Offers: FC = () => {
 	return (
 		<section className="offers">
 			<div className="offers__wrapper__content">
-				<h2 className="offers__title">Offers</h2>
+				<H2>Offers</H2>
+				{/* <h2 className="offers__title">Offers</h2> */}
 				<div className="offers__wrapper__cards">
 					{cardsData.map(el => (
 						<Card

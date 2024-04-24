@@ -6,3 +6,4 @@ export { Offers } from "./Offers/Offers";
 export { Banner } from "./Banner/Banner";
 export { Info } from "./Info/Info";
 export { Footer } from "./Footer/Footer";
+export { H2 } from "./common/H2/H2";

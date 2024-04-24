@@ -2,11 +2,6 @@
 	@extend .section-size;
 	@include text-size(2em);
 
-	&__title {
-		@include text-size(3.2rem);
-		font-weight: 800;
-	}
-
 	&__text {
 		opacity: 60%;
 		margin: 17px 0;
@@ -24,23 +19,12 @@
 }
 
 @media (max-width: 768px) {
-	.info__title {
-		@include text-size(2.4rem);
-		font-weight: 800;
-		margin-bottom: 13px;
-	}
-
 	.info__text, .info__link {
 		@include text-size(1.6rem);
 	}
 }
 
 @media (max-width: 640px) {
-	.info__title {
-		@include text-size(1.8rem);
-		margin-bottom: 20px;
-	}
-
 	.info__text, .info__link {
 		@include text-size(1.4rem);
 	}

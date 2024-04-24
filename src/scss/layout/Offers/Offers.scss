@@ -14,22 +14,11 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 40px;
 	}
-
-	&__title {
-		@include text-size(3.2em);
-		font-weight: 800;
-		margin-bottom: 40px;
-	}
 }
 
 @media (max-width: 768px) {
 	.offers__wrapper__cards {
 		gap: 30px;
-	}
-
-	.offers__title {
-		@include text-size(2.4em);
-		margin-bottom: 30px;
 	}
 }
 

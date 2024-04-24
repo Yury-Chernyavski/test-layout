@@ -1,9 +1,11 @@
 import { FC } from "react";
+import { H2 } from "../index";
 
 export const Info: FC = () => {
 	return (
 		<section className="info">
-			<h2 className="info__title">Embark on a space journey</h2>
+			{/* <h2 className="info__title"></h2> */}
+			<H2>Embark on a space journey</H2>
 			<p className="info__text">
 				Traveling into space is one of the most exciting and unforgettable
 				adventures that can change your life forever. And if you have ever
@@ -16,7 +18,11 @@ export const Info: FC = () => {
 				fully enjoy your adventure in space. We offer various options for space
 				excursions.
 			</p>
-			<a href="#" className="info__link">Read more</a>
+			<a
+				href="#"
+				className="info__link">
+				Read more
+			</a>
 		</section>
 	);
 }
