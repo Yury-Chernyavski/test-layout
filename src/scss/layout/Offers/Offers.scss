@@ -3,21 +3,38 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 60px 0;
+	padding-bottom: 60px;
 
 	&__wrapper__content {
 		@extend .section-size;
 	}
 
-	.offers__wrapper__cards {
+	&__wrapper__cards {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 40px;
 	}
 
-
 	&__title {
 		@include text-size(3.2em);
+		font-weight: 800;
 		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.offers__wrapper__cards {
+		gap: 30px;
+	}
+
+	.offers__title {
+		@include text-size(2.4em);
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 640px) {
+	.offers__wrapper__cards {
+		grid-template-columns: 1fr;
 	}
 }

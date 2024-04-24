@@ -5,7 +5,7 @@
 	align-items: center;
 
 	&__link {
-		color: inherit;
+		color: white;
 		text-decoration: none;
 		margin: 30px;
 		// transition: all 0.2s;
@@ -19,7 +19,8 @@
 
 	&__cart {
 		fill: white;
-		// transition: all 1s ease;
+		
+		transition: all 1s ease;
 	}
 
 	&__cart:hover {

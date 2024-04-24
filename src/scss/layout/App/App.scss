@@ -5,6 +5,13 @@
   color: white;
 
   main {
+    padding: 60px 0;
     background: linear-gradient(to top, $blue, $dark-blue);
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 50px 0;
   }
 }

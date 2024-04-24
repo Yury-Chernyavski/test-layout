@@ -21,7 +21,7 @@
 		font-weight: 800;
 		width: auto;
 		margin: 30px 0 20px;
-		
+
 		& span {
 			color: $pink;
 		}
@@ -34,6 +34,45 @@
 
 		& span {
 			color: $yellow;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.banner {
+		height: 420px;
+
+		&__title {
+			@include text-size(4.8em, 1em);
+		}
+
+		&__subtitle {
+			@include text-size(2.2em, 1.2em);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.banner {
+		height: auto;
+
+		&__wrapper {
+			grid-template-columns: 1fr;
+			gap: 0;
+			margin-top: -200px;
+			text-align: center;
+
+			& > img {
+				grid-row: 1 / 2;
+			}
+		}
+
+		&__title {
+			@include text-size(3.6em, 1em);
+		}
+
+		&__subtitle {
+			@include text-size(1.6em, 1.2em);
 		}
 	}
 }

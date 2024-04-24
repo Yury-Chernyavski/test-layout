@@ -7,3 +7,11 @@
 .hover-animation {
 	transition: all .2s;
 }
+
+
+@media (max-width: 768px) {
+	.section-size {
+		width: 90%;
+		max-width: 710px;
+	}
+}

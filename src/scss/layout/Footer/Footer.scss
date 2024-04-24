@@ -1,0 +1,15 @@
+.footer {
+	background-color: black;
+	height: 127px;
+	
+	&__content {
+		display: flex;
+		flex-direction: column;
+		place-items: center;
+	}
+
+	&__content {
+		@include text-size(1.8em, 1.5em);
+		color: $yellow;
+	}
+}
